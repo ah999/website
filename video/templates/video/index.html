@@ -1,0 +1,10 @@
+{%if all_videos %}
+
+    <ul>
+        {% for video in all_videos %}
+            <li><a href="{{video.video_url}}">{{ video.video_title }}</a></li>
+        {% endfor %}
+    </ul>
+{%else%}
+    <h3>there's no videos</h3>
+{%endif%}
